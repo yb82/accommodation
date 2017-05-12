@@ -554,7 +554,14 @@ class Update {
 		$this->new_l_name = $_POST ['l_name'];
 		$this->new_gender = $_POST ['gender'];
 		$this->new_email = $_POST ['email'];
-		$this->new_agent_email = $_POST['agent_email'];
+		if(isset($_POST['agent_email'])){
+			$this->new_agent_email = $_POST['agent_email'];
+		} else $this->new_agent_email = $this->agent_email;
+		
+		if(is_null($this->new_agent_email)|| $this->new_agent_email == "" ){
+			$this->new_agent_email = $this->agent_email;
+		} 
+		
 		
 		$this->new_contact = $_POST ['contact'];
 		$this->new_nation = $_POST ['nationality'];
@@ -1137,8 +1144,8 @@ class Update {
 			}
 		}
 		
-		if (isset($this->user_email)/* && !is_null($this->user_email )*/) {
-			$this->mail->AddCC ( $this->user_email );
+		if (isset($this->new_agent_email)/* && !is_null($this->user_email )*/) {
+			$this->mail->AddCC ( $this->new_agent_email );
 		}
 			
 		
