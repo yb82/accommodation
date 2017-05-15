@@ -728,6 +728,9 @@ class Update {
 	<td style="width:200pt;background-color: #FFFFFF;padding-left:10px;font-size:11.0pt;font-family:Verdana, Geneva, sans-serif;color:#202020; ">PEDESTRIAN GATE CODE</td>
 	<td style="width:310pt;background-color: #FFFFFF;padding-left:10px;font-size:11.0pt;font-family:Verdana, Geneva, sans-serif;color:#202020 ;">'.$this->new_pgate_code.'</td>
 	</tr>
+	<td style="width:200pt;background-color: #DEF4FF;padding-left:10px;font-size:11.0pt;font-family:Verdana, Geneva, sans-serif;color:#202020; ">Comment</td>
+	<td style="width:310pt;background-color: #DEF4FF;padding-left:10px;font-size:11.0pt;font-family:Verdana, Geneva, sans-serif;color:#202020 ;">'.$this->new_comment.'</td>
+	</tr>
 			
 		</table><br/><br/><br/>
 		If you requiry any changes, please click on URL: http://www.ihbrisbane.com.au/Apps/bookingaccommodation/<br/>  
@@ -1268,17 +1271,18 @@ class Update {
 	
 	
 		//$this->mail->AddBCC ( "support@ihbrisbane.com.au");
-		/* $this->mail->AddBCC("japan@ihbrisbane.com.au");
 		
 		
-		$this->mail->AddBCC("brian@ihbrisbane.com.au");
+		
+//		$this->mail->AddBCC("brian@ihbrisbane.com.au");
+		$this->mail->AddBCC("japan@ihbrisbane.com.au");
+		$this->mail->AddBCC("vitor@ihbrisbane.com.au");
+		
 		$this->mail->AddBCC("james@ihbrisbane.com.au");
 		$this->mail->AddBCC("marketing@ihbrisbane.com.au");
 		$this->mail->AddBCC("middleeast@ihbrisbane.com.au");
-		$this->mail->AddBCC("uniresort@uniresort.com.au"); */
+		$this->mail->AddBCC("uniresort@uniresort.com.au");
 		/*$this->mail->AddBCC("accommodation@ihbrisbane.com.au");
-		$this->mail->AddBCC("japan@ihbrisbane.com.au");
-		$this->mail->AddBCC("vitor@ihbrisbane.com.au");
 		$this->mail->AddBCC("marketing@ihbrisbane.com.au");
 		$this->mail->AddBCC("james@ihbrisbane.com.au");*/
 		
